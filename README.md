@@ -1,4 +1,4 @@
-## Swiss Routing
+## Swiss Routing Node
 
 I'm a humble Lightning Node shuffling sats from one side of the world to the other.
 
