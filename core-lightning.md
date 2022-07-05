@@ -19,4 +19,14 @@ To enable hybrid mode, add this line to your config file:
 To disable hybrid mode (and route all traffic through Tor proxy), change it to:
 
     always-use-proxy=true
+    
+My config file looks something like:
 
+    # TOR
+    addr=statictor:127.0.0.1:9051/torport=9735
+    proxy=127.0.0.1:9050
+    always-use-proxy=false
+
+    # CLEARNET
+    bind-addr=0.0.0.0:<ClearnetPort>
+    announce-addr=<ClearnetIp>:<ClearnetPort>
