@@ -18,12 +18,13 @@ Amboss provides [a health check service](https://docs.amboss.space/api/monitorin
 
 ### Cron Configuration
 
-You can use [this shell script](https://docs.amboss.space/api/monitoring/health-checks) on your node to send a properly formed health check ping to Amboss.
+You can use [this shell script for CLN](https://gist.github.com/swissrouting/111d4a615d670ddf8d11eaa8a60eacca) or [this shell script for LND](https://gist.github.com/C-Otto/cd5d7b0e67fc2e3e212cf13a558b101f) on your node to send a properly formed health check ping to Amboss.
 
 1. Save shell script (e.g. `~/amboss-ping.sh`)
 1. Run `crontab -e` to edit your cron configuration
 1. Add a line like this to run the job every minute:
-      * * * * * /home/bitcoin/amboss-ping.sh
+
+    * * * * * /home/bitcoin/amboss-ping.sh
 
 Note: cron scripts do not run with the same environment as interactive shells. This means you might encounter problems when running this script as a cron job. If necessary you can try tweaking the line as follows to instruct bash to use an interactive (login) shell with full user customizations active:
 
