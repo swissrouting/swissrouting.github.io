@@ -24,11 +24,15 @@ You can use [this shell script for CLN](https://gist.github.com/swissrouting/111
 1. Run `crontab -e` to edit your cron configuration
 1. Add a line like this to run the job every minute:
 
-    * * * * * /home/bitcoin/amboss-ping.sh
+```
+* * * * * /home/bitcoin/amboss-ping.sh
+```
 
 Note: cron scripts do not run with the same environment as interactive shells. This means you might encounter problems when running this script as a cron job. If necessary you can try tweaking the line as follows to instruct bash to use an interactive (login) shell with full user customizations active:
 
-    * * * * * bash -l /home/bitcoin/amboss-ping.sh
+```
+* * * * * bash -l /home/bitcoin/amboss-ping.sh
+```
 
 ### Amboss Configuration
 
