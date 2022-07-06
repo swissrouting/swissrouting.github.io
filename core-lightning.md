@@ -11,6 +11,31 @@ See [lightningd docs](https://lightning.readthedocs.io/lightningd-config.5.html)
 On the RaspiBlitz you can find the CLN config file under the `bitcoin` user's home directory.
 
     /home/bitcoin/.lightning/config
+    
+## Uptime Monitoring With Amboss
+
+Amboss provides [a health check service](https://docs.amboss.space/api/monitoring/health-checks) for Lightning nodes. This can be used to monitor the uptime of your node and even display the information publicly if desired.
+
+### Cron Configuration
+
+You can use [this shell script](https://docs.amboss.space/api/monitoring/health-checks) on your node to send a properly formed health check ping to Amboss.
+
+1. Save shell script (e.g. `~/amboss-ping.sh`)
+1. Run `crontab -e` to edit your cron configuration
+1. Add a line like this to run the job every minute:
+      * * * * * /home/bitcoin/amboss-ping.sh
+
+Note: cron scripts do not run with the same environment as interactive shells. This means you might encounter problems when running this script as a cron job. If necessary you can try tweaking the line as follows to instruct bash to use an interactive (login) shell with full user customizations active:
+
+    * * * * * bash -l /home/bitcoin/amboss-ping.sh
+
+### Amboss Configuration
+
+No special configuration is needed on Amboss to enable this functionality.
+
+You can view health checks for your node at: `https://amboss.space/node/NODE_ID/health`
+
+You can configure the health check interval and whether the results are publicly visible at: [https://amboss.space/owner?page=monitoring](https://amboss.space/owner?page=monitoring)
 
 ## Hybrid Mode
 
