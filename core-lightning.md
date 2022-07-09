@@ -2,6 +2,15 @@
 
 Tips and tricks to configure Core Lightning (CLN) for optimal performance.
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## Config File
 
 See [lightningd docs](https://lightning.readthedocs.io/lightningd-config.5.html) for more details.
