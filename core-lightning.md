@@ -6,14 +6,10 @@ Tips and tricks to configure Core Lightning (CLN) for optimal performance.
 
 ## Table Of Contents
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .no_toc .text-delta }
+{: .no_toc .text-delta }
+
 1. TOC
-{:toc}
-</details>
+   {:toc}
 
 ## Config File
 
