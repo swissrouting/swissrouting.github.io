@@ -1,8 +1,8 @@
 # Core Lightning Tips
 
-Tips and tricks to configure Core Lightning (CLN) for optimal performance.
-
 {: .no_toc }
+
+Tips and tricks to configure Core Lightning (CLN) for optimal performance.
 
 ## Table Of Contents
 
