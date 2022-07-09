@@ -1,11 +1,9 @@
 # Core Lightning Tips
-
 {: .no_toc }
 
 Tips and tricks to configure Core Lightning (CLN) for optimal performance.
 
 ## Table Of Contents
-
 {: .no_toc }
 
 <details open markdown="block">
