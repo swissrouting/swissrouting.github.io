@@ -4,3 +4,7 @@ description: Swiss Routing - A Bitcoin Lightning Network Node
 color_scheme: light
 plugins:
   - jekyll-gist
+# Aux links for the upper right navigation
+aux_links:
+  "Swiss Routing on Twitter":
+    - "https://twitter.com/SwissRouting"
