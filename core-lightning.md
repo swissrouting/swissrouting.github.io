@@ -9,7 +9,7 @@ Tips and tricks to configure Core Lightning (CLN) for optimal performance.
 {: .no_toc .text-delta }
 
 1. TOC
-   {:toc}
+{:toc}
 
 ## Config File
 
