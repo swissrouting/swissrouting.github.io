@@ -5,6 +5,9 @@ color_scheme: light
 plugins:
   - jekyll-gist
 
+# Include common verification and config files
+include: [".well-known"]
+
 # Aux links for the upper right navigation
 aux_links:
   "Swiss Routing on Twitter":
