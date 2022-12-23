@@ -19,23 +19,21 @@ It doesn't rely on any trusted central server, hence it is resilient; it is base
 
 See [this guide](https://github.com/vishalxl/nostr_console/discussions/31) for suggestions about how to get started using Nostr.
 
-## Relays
+## nostr-ts-relay
 
-### Running nostr-ts-relay
+### Setting Up
 
 One of the most popular relay implementations is [nostr-ts-relay](https://github.com/Cameri/nostr-ts-relay). You can install it on your system by following the [excellent guide by André Neves](https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under).
 
-#### Installing as a Service
+### Installing as a Service
 
 If you want your relay to restart automatically on failure, and to start up again after every reboot, you can install it as a systemd service.
 
-First open your favorite editor and save the following contents into the file `/etc/systemd/system/nostr-ts-relay.service`
-
-{% gist 76175d24b3b233bf331b59d7643f0d3c %}
-
-For example you can do this by running the following command and copying/pasting the contents of the gist:
+First open your favorite editor and save the following contents into a file under `/etc/systemd/system`. For example:
 
     nano /etc/systemd/system/nostr-ts-relay.service
+
+{% gist 76175d24b3b233bf331b59d7643f0d3c %}
 
 Then you can enable it to launch at boot with:
 
