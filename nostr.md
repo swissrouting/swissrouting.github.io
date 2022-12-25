@@ -19,11 +19,11 @@ It doesn't rely on any trusted central server, hence it is resilient; it is base
 
 See [this guide](https://github.com/vishalxl/nostr_console/discussions/31) for suggestions about how to get started using Nostr.
 
-## nostr-ts-relay
+## nostream
 
 ### Setting Up
 
-One of the most popular relay implementations is [nostr-ts-relay](https://github.com/Cameri/nostr-ts-relay). You can install it on your system by following the [excellent guide by André Neves](https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under).
+One of the most popular relay implementations is [nostream](https://github.com/Cameri/nostream). You can install it on your system by following the [excellent guide by André Neves](https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under).
 
 ### Installing as a Service
 
@@ -31,21 +31,21 @@ If you want your relay to restart automatically on failure, and to start up agai
 
 First open your favorite editor and save the following contents into a file under `/etc/systemd/system`. For example:
 
-    nano /etc/systemd/system/nostr-ts-relay.service
+    nano /etc/systemd/system/nostream.service
 
 {% gist 76175d24b3b233bf331b59d7643f0d3c %}
 
 Then you can enable it to launch at boot with:
 
-    systemctl enable nostr-ts-relay
+    systemctl enable nostream
 
 Start it with:
 
-    systemctl start nostr-ts-relay
+    systemctl start nostream
 
 And view the logs with:
 
-    journalctl -u nostr-ts-relay
+    journalctl -u nostream
 
 ### Mirroring
 
